@@ -7,9 +7,9 @@ class Solution {
     static int idx;
 
     static void DFS(int src, ArrayList<ArrayList<Integer>> adj, boolean[] vis) {
-        if (vis[src] == true)
-            return;
-        vis[src] = true;
+        // if (vis[src] == true)
+        //     return;
+        // vis[src] = true;
 
         for (Integer nbr : adj.get(src)) {
             DFS(nbr, adj, vis);
